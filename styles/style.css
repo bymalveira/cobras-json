@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #666;
+}
+
+.secao-titulo {
+  color: #2c3e50;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 8px;
+  margin: 30px 0 20px 0;
+}
+
+/* Grid das Cobras */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  color: #1a252f;
+}
+
+.cientifico {
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.badge-peconhenta {
+  background-color: #fde8e8;
+  color: #c0392b;
+}
+
+.badge-nao-peconhenta {
+  background-color: #e8f8f5;
+  color: #27ae60;
+}
+
+/* Cards dos Hospitais */
+.card-hospital {
+  background: white;
+  border-left: 5px solid #e74c3c;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-hospital h3 {
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+.soros-container {
+  background: #fdf2f2;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.soros-container ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.btn-maps {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.btn-maps:hover {
+  background-color: #2980b9;
+}
+
+.status-filtro {
+  background-color: #fce4e4;
+  border: 1px solid #f5c6cb;
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-limpar {
+  background: #34495e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-socorro {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.btn-socorro:hover {
+  background-color: #c0392b;
+}
+
+.sem-risco-texto {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+.distancia-tag {
+  display: inline-block;
+  background-color: #eafaf1;
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
