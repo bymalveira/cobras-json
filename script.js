@@ -246,7 +246,7 @@ function renderizarHospitais(hospitais, userLat = null, userLon = null) {
       </div>
 
       <a href="${linkMaps}" target="_blank" rel="noopener noreferrer" class="btn-maps">
-        🚨 Iniciar Navegação GPS até ao Hospital
+        Iniciar Navegação GPS até ao Hospital
       </a>
     `;
 
